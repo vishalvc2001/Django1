@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <!--1) This is by using render it has [ return render(request, 'index.html') ]
+    <br>
+    {{ name }} is from {{ place }} -->
+
+    <!-- 2 comment-->
+    <h1>Welcome  to text analyzer. Enter your text below</h1>
+    <!-- <form action='/removepunc' method='get'> -->
+    <form action='/analyze' method='get'>
+        <textarea name="text" style='margin: 0px; width: 675px; height: 170px;'></textarea><br>
+        <input type="checkbox" name="removepunc">Remove Punctuations<br>
+        <input type="checkbox" name="fullcaps">UPPERCASE<br>
+        <input type="checkbox" name="newlineremover">New Line Remover<br>
+        <input type="checkbox" name="extraspaceremover">Extra Space Remover<br>
+        <input type="checkbox" name="charcount">Char Count<br>
+        <button type="submit">Analyze text</button>
+    </form>
+</body>
+</html>
